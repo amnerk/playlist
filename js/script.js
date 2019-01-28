@@ -9,9 +9,21 @@ var images_links = ["http://image.iheart.com/WMG4/Thumb_Content/Full_PC/WMG/Nov1
 var songlinks = ["https://youtu.be/Dn8-4tjPxD8", "https://youtu.be/lrRmgbchiGY", "https://youtu.be/iJYyPLKJcFc"]
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
+songs.forEach(function(song) {
+    $("#songs").append("<p>" + song + "</p>");
+    });
 
+images_links.forEach(function(image) {
+    $("#images").append("<img src=" + image + ">");
+    });
+
+artists.forEach(function(artist) {
+    $("#artists").append("<p>" + artist + "</p>");
+    });
+songlinks.forEach(function(links) {
+    $("#link").append("<p>" + links + "</p>");
+});
 }
-
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
