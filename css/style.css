@@ -43,11 +43,10 @@ h1 {
     text-align: right;
 }
 
-#links a {
+#links p {
     display: block;
     font-size: 18px;
     height: 100px;
-    font-weight: bold;
     margin: 20px;
 }
 
