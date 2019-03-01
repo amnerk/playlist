@@ -24,7 +24,7 @@ artists.forEach(function(artist) {
     $("#artists").append("<p>" + artist + "</p>");
     });
 songlinks.forEach(function(links) {
-    $("#links").append("<p>" + links + "</p>");
+    $("#links").append("<a href" + links + ">Listen<a>");
 });
 }
 function emptySongInfo(){
